@@ -30,28 +30,16 @@ export function TestimonialsSection() {
 
   const testimonials = [
     {
-      quote: 'Her presence on camera is captivating—professional yet warm. She transformed our property showcase into something truly special.',
-      author: 'Sarah Mitchell',
-      role: 'Luxury Real Estate Director',
-      initial: 'S'
-    },
-    {
-      quote: 'Working with her elevated our brand presentations significantly. The authenticity and confidence she brings are unmatched.',
-      author: 'James Chen',
-      role: 'Media Producer',
-      initial: 'J'
-    },
-    {
-      quote: 'Her content is always polished, engaging, and perfectly aligned with our vision. A true professional in every sense.',
-      author: 'Rebecca Foster',
-      role: 'Corporate Communications Lead',
-      initial: 'R'
-    },
-    {
-      quote: 'The level of preparation and delivery excellence she brings to every project sets a new standard in our industry.',
-      author: 'Michael Torres',
-      role: 'Broadcast Network Executive',
+      quote: 'I had the opportunity to work closely with Megha, and she has been an exceptional Content Writer and Anchor. As a content writer, Megha brings clarity, creativity, and strategy together beautifully. Her ability to understand the audience and craft engaging, meaningful content sets her apart. Whether it was writing scripts, social media content, or campaign ideas, she consistently delivered work that was impactful and well-structured. As an anchor, Megha carries confidence and authenticity on camera. She communicates with clarity, maintains strong screen presence, and connects naturally with the audience. Her preparation, articulation, and professionalism reflect her commitment to excellence. Beyond her skills, Megha is proactive, receptive to feedback, and always willing to go the extra mile to improve. She is a reliable team member and a strong creative asset to any organization. ',
+      author: 'Madhav Vij',
+      role: 'Senior Marketing Executive',
       initial: 'M'
+    },
+    {
+      quote: 'I’ve had the pleasure of working with Megha, and I can confidently say she brings a rare blend of confidence, creativity, and professionalism to everything she does. As an anchor and content creator, she has a natural on-camera presence that instantly connects with the audience, while her storytelling skills add depth and authenticity to every project. Megha is not only talented but also highly dedicated — she understands creative direction quickly, adapts with ease, and always strives to deliver content that feels fresh and impactful. Any team looking for a strong voice, creative vision, and reliable collaboration would be lucky to have her.',
+      author: 'Sagar Rajput',
+      role: 'Video Editor',
+      initial: 'S'
     }
   ]
 
@@ -60,8 +48,8 @@ export function TestimonialsSection() {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="mb-16 text-center">
-          <p className="text-sm font-medium text-primary uppercase tracking-widest mb-3">Testimonials</p>
-          <h2 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-6">What Clients Say</h2>
+          <p className="text-sm font-medium text-primary uppercase tracking-widest mb-3">Recommendations</p>
+          <h2 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-6">What People Say</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Feedback from industry leaders and brands who have experienced the commitment to excellence.
           </p>

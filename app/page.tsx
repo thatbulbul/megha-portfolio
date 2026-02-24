@@ -2,6 +2,7 @@ import { Header } from '@/components/header'
 import { HeroSection } from '@/components/hero-section'
 import { AboutSection } from '@/components/about-section'
 import { WorkSection } from '@/components/work-section'
+import { ReelsSection } from '@/components/reels-section'
 import { ContentSection } from '@/components/content-section'
 import { ExperienceSection } from '@/components/experience-section'
 import { TestimonialsSection } from '@/components/testimonials-section'
@@ -18,6 +19,7 @@ export default function Home() {
       </section>
       <section id="work">
         <WorkSection />
+        <ReelsSection /> 
       </section>
       <section id="content">
         <ContentSection />
