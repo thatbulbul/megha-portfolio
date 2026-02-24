@@ -38,15 +38,29 @@ export function ContactSection() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    setSubmitted(true)
-    setTimeout(() => {
-      setSubmitted(false)
-      setFormData({ name: '', email: '', subject: '', message: '' })
-    }, 3000)
+
+    try {
+      await fetch("https://script.google.com/macros/s/AKfycbw5nApLPJ3dQ3PFTis4QVJwS7a7QWlBhTV6z5fsbOKMVb5DDI4CkFfpG1zLZE3AhWQD/exec", {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+
+      setSubmitted(true)
+
+      setTimeout(() => {
+        setSubmitted(false)
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      }, 3000)
+
+    } catch (err) {
+      console.error("Error submitting form", err)
+    }
   }
 
   const socialLinks = [
@@ -71,10 +85,29 @@ export function ContactSection() {
     <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 bg-secondary/5">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="mb-16 text-center">
-          <p className="text-sm font-medium text-primary uppercase tracking-widest mb-3">Get in Touch</p>
-          <h2 className="font-serif text-4xl sm:text-5xl font-bold text-foreground mb-6">Let's Connect</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <div className="mb-16 flex flex-col items-center text-center relative">
+          <p className="text-sm font-medium text-primary uppercase tracking-widest mb-3">
+            Get in Touch
+          </p>
+
+          {/* TITLE + CAT VIDEO */}
+          <div className="relative flex items-center gap-4">
+            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-foreground">
+              Let's Connect
+            </h2>
+
+            {/* CAT VIDEO */}
+            <video
+              src="/videos/cat-2.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-14 sm:w-20 pointer-events-none mb-9"
+            />
+          </div>
+
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mt-4">
             Interested in collaborating or learning more about my work? I'd love to hear from you.
           </p>
         </div>

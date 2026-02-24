@@ -30,7 +30,6 @@ export const metadata: Metadata = {
   title: 'Anchor & Content Creator | Professional Media Portfolio',
   description: 'Premium portfolio showcasing professional anchoring, content creation, and media presentations. Elegant, animated, and cinematic storytelling.',
   keywords: ['anchor', 'content creator', 'media', 'presenter', 'portfolio'],
-  generator: 'v0.app',
   icons: {
     icon: [
       {

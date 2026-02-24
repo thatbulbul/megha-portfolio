@@ -55,9 +55,9 @@ export function Header() {
         </div>
 
         {/* CTA Button */}
-        <button className="hidden md:inline-flex px-6 py-2 bg-black text-white rounded-lg text-sm font-medium hover:bg-white hover:text-black hover:outline hover:outline-2 hover:outline-black transition-all duration-300">
+        <a href="#contact" className="hidden md:inline-flex px-6 py-2 bg-black text-white rounded-lg text-sm font-medium hover:bg-white hover:text-black hover:outline hover:outline-2 hover:outline-black transition-all duration-300">
           Inquire Now
-        </button>
+        </a>
 
         {/* Mobile Menu Button */}
         <button
@@ -103,9 +103,9 @@ export function Header() {
                 {link.label}
               </a>
             ))}
-            <button className="w-full px-4 py-2 bg-black text-white rounded-lg text-sm font-medium hover:bg-white hover:text-black hover:outline hover:outline-2 hover:outline-black transition-all mt-4">
+            <a href="#contact" className="w-full block text-center px-4 py-2 bg-black text-white rounded-lg text-sm font-medium hover:bg-white hover:text-black hover:outline hover:outline-2 hover:outline-black transition-all mt-4" onClick={() => setIsMobileMenuOpen(false)}>
               Inquire Now
-            </button>
+            </a>
           </div>
         </div>
       )}
