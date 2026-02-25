@@ -48,11 +48,11 @@ export function ContentSection() {
   },
    {
     category: 'Real Estate',
-    title: 'The Indian women’s cricket team’s victory v/s Real Estate',
-    excerpt: 'Like all  Indians, I was excited for the  India vs. South Africa match, and when the trophy was brought home to us.',
+    title: 'What Buyers & the Best Real Estate Company to Buy',
+    excerpt: 'A quick breakdown of UP’s new title-based property registry rule and what it means for Delhi-NCR buyers.',
     date: 'November 2025',
     link: 'https://bop.in/property-consultant-noida-noida-authority-plot-scheme/',
-    image:'images/blog-cricket.jpg'
+    image:'images/blog-property-fraud.webp'
   },
 {
     category: 'Real Estate',

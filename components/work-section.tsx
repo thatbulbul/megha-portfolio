@@ -60,7 +60,7 @@ export function WorkSection() {
   image: '/images/work/patna-blast.png'
 },
   {
-  title: 'Testy-Food | News Food Vlog',
+  title: 'Tasty-Food | Food Vlog',
   category: 'Food & Beverage',
   description: 'On-ground food vlogging and anchoring for a news channel segment, showcasing local flavours with engaging presentation, live interaction, and energetic storytelling.',
   link: 'https://drive.google.com/file/d/1ZNPS-_Kr_0jGnBzHo1m2iWpQhaQpuyjg/view?usp=drivesdk',

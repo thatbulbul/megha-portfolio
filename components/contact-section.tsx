@@ -103,7 +103,7 @@ export function ContactSection() {
               loop
               muted
               playsInline
-              className="w-14 sm:w-20 pointer-events-none mb-9"
+              className="w-14 sm:w-20 pointer-events-none -mt-4 sm:mt-0 sm:mb-9"
             />
           </div>
 
